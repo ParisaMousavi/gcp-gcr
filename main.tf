@@ -6,4 +6,10 @@ resource "google_artifact_registry_repository" "this" {
   docker_config {
     immutable_tags = var.immutable_tags
   }
+  labels = merge(
+    var.additional_labels,
+    {
+      created-by = "iac-tf"
+    }
+  )
 }

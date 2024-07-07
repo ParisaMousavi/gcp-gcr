@@ -20,3 +20,8 @@ variable "immutable_tags" {
   type = bool
   default = true
 }
+
+variable "additional_labels" {
+  default = {}
+  type    = map(string)
+}
