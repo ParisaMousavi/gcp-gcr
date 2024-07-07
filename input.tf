@@ -8,6 +8,7 @@ variable "location" {
 
 variable "description" {
   type = string
+  default = null
 }
 
 variable "format" {
