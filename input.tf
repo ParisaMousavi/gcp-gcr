@@ -3,21 +3,26 @@ variable "name" {
 }
 
 variable "location" {
-  type    = string
+  type = string
 }
 
 variable "description" {
-  type = string
+  type    = string
   default = null
 }
 
 variable "format" {
-  type = string
+  type    = string
   default = "DOCKER"
 }
 
+variable "mode" {
+  type    = string
+  default = "STANDARD_REPOSITORY"
+}
+
 variable "immutable_tags" {
-  type = bool
+  type    = bool
   default = true
 }
 
